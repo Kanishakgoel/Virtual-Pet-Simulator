@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pet-container">
+        <h1>Virtual Pet Simulator</h1>
+        
+        <div class="pet-display">
+            <div class="pet" id="pet">
+                <div class="pet-body">
+                    <div class="pet-face">
+                        <div class="pet-eyes">
+                            <div class="pet-eye left"></div>
+                            <div class="pet-eye right"></div>
+                        </div>
+                        <div class="pet-mouth"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pet-shadow"></div>
+        </div>
+        
+        <div class="pet-status">
+            <div class="status-bar">
+                <span><i class="fas fa-heart"></i> Happiness</span>
+                <div class="bar-container">
+                    <div class="bar happiness" id="happinessBar"></div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span><i class="fas fa-utensils"></i> Hunger</span>
+                <div class="bar-container">
+                    <div class="bar hunger" id="hungerBar"></div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span><i class="fas fa-bolt"></i> Energy</span>
+                <div class="bar-container">
+                    <div class="bar energy" id="energyBar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pet-controls">
+            <button id="feedBtn" class="action-btn">
+                <i class="fas fa-utensils"></i> Feed
+            </button>
+            <button id="playBtn" class="action-btn">
+                <i class="fas fa-gamepad"></i> Play
+            </button>
+            <button id="sleepBtn" class="action-btn">
+                <i class="fas fa-moon"></i> Sleep
+            </button>
+            <button id="cleanBtn" class="action-btn">
+                <i class="fas fa-bath"></i> Clean
+            </button>
+        </div>
+        
+        <div class="pet-message" id="petMessage"></div>
+        
+        <div class="time-display">
+            <span id="timeOfDay"><i class="fas fa-sun"></i> Day</span>
+            <span id="gameTime">Day 1</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
